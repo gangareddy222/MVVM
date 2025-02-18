@@ -9,6 +9,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Mvvm.Views;
+using Mvvm.ViewModels;
+
 
 namespace Mvvm
 {
@@ -22,6 +24,7 @@ namespace Mvvm
             InitializeComponent();
           
             MainContent.Content= new EmployeeView();
+            MainContent.DataContext = new EmployeeViewModel();
 
         }
     }

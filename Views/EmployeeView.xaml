@@ -43,14 +43,7 @@
 
         <TextBlock Name="txtBlockMessage" Grid.Row="5" Grid.Column="1" Margin="5,8,5,8"/>
         <DataGrid Name="dgEmployees" AutoGenerateColumns="False" Grid.Row="6" Grid.Column="1" Margin="5,8,5,8" Padding="3,3,3,3" RenderTransformOrigin="0.5,0.5">
-            <DataGrid.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                  
-                    <TranslateTransform/>
-                </TransformGroup>
-            </DataGrid.RenderTransform>
+            ItemsSource="{Binding Path
         </DataGrid>
 
 

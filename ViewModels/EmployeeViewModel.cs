@@ -31,6 +31,10 @@ namespace Mvvm.ViewModels
             get { return employeesList; }
             set { employeesList = value;OnPropertyChanged("EmployeesList"); }
         }
+       private void LoadData()
+        {
+            EmployeesList = Obj.GetAll();
+        }
 
     }
 }
