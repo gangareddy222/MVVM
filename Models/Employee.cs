@@ -16,14 +16,14 @@ namespace Mvvm.Models
         public int ID
         {
             get { return id; }
-            set {id=value; OnPropertyChanged("Id");}
+            set {id=value; OnPropertyChanged(nameof(ID));}
         }
 
         private string name;
         public string Name
         {
             get { return name; }
-            set { name = value; OnPropertyChanged("Name"); }
+            set { name = value; OnPropertyChanged(nameof(Name)); }
         }
         private int age;
 

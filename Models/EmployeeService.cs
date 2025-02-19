@@ -9,11 +9,12 @@ namespace Mvvm.Models
 {
     public class EmployeeService
     {
-        private static List<Employee> EmployeeList;
+        private static List<Employee> EmployeeList { get; set; }
         public EmployeeService() {
             EmployeeList = new List<Employee>()
             {
-              new Employee{ID=101,Name="Ganga",Age=25}
+              new Employee{ID=101,Name="Ganga",Age=25},
+              new Employee{ID=102,Name="Reddy",Age=20}
             };
         
         }
